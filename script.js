@@ -1,5 +1,3 @@
-var btn1 = new Button('Hello!');
-
 function Button(text) {
 	this.text = text || 'Hello';
 }
@@ -7,6 +5,7 @@ function Button(text) {
 Button.prototype = {
 	create: function() {
 		var self = this;
+		var btn1 = new Button('Hello!');
 		this.$element = $('<button>');
 		this.$element.text(this.text);
 		this.$element.click(function() {
