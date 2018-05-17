@@ -5,7 +5,6 @@ function Button(text) {
 Button.prototype = {
 	create: function() {
 		var self = this;
-		var btn1 = new Button('Hello!');
 		this.$element = $('<button>');
 		this.$element.text(this.text);
 		this.$element.click(function() {
@@ -15,4 +14,6 @@ Button.prototype = {
 	}
 }
 
-btn1.create(); // w konsoli pokazuje, że create nie jest funkcja i nie mogę jej wywołać;/
+var btn1 = new Button('Hello!');
+
+btn1.create();
